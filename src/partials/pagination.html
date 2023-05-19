@@ -1,0 +1,54 @@
+<style>
+    .tui-pagination{
+        flex-shrink: 0;
+        margin-bottom: 40px;
+        margin-top: 0;
+    }
+    .tui-pagination .tui-page-btn{
+        border: none;
+        line-height: 1.2px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+    }
+    .tui-pagination .tui-is-selected {
+        width: 35px;
+        height: 35px;
+        display: inline-flex;
+        background-color: #FF6B08;
+        color: white;
+        border-radius: 5px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .tui-pagination .tui-prev{
+        padding-top: 6px;
+        width: 25px;
+        height: 25px;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        position: relative;
+    }
+    .tui-pagination .tui-next{
+        padding-top: 6px;
+        width: 25px;
+        height: 25px;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        position: relative;
+    }
+    .tui-pagination .tui-ico-first,
+    .tui-ico-last {
+        margin-top: 7px;
+    }
+    @media (max-width:320px){
+        .tui-pagination{
+        /* flex-shrink: 0; */
+        margin-bottom: 70px;
+        /* margin-top: 0; */
+    } 
+    }
+</style>
+<div id="pagination" class="tui-pagination"></div>

@@ -1,0 +1,36 @@
+.gallery {
+    padding-top: 250px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 290px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 290px;
+      padding-bottom: 60px;
+      padding-left: 105px;
+    }
+  }
+  .empty__library{
+    display: flex;
+    justify-content: center;
+  }
+  .gallery__container {
+    @extend .container;
+
+    // min-height: 420px;
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 32px;
+      // min-height: 504px;
+    }
+  }

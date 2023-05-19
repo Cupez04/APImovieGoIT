@@ -1,0 +1,34 @@
+<style>
+  .logo__text--ref{
+    text-decoration: none;
+    color: #fff;
+  }
+  .logo__text:hover{
+    cursor: pointer;
+  }
+</style>
+<header class="header">
+  <div class="header__container hero--lib">
+    <nav class="header__nav">
+      <div class="header__logo logo">
+        <a href="index.html">
+          <i class="bx bx-film logo__icon"></i>
+        </a>
+        <a href="index.html" class="logo__text logo__text--ref">Filmoteka</a>
+        <!-- <span class="logo__text">Filmoteka</span> -->
+      </div>
+      <div class="header__search">
+        <button class="search__button search__button--active" data-id="watched-btn">Watched</button>
+        <button class="search__button header-movie-button" data-id="queue-btn">Queue</button>
+      </div>
+      <ul class="header__menu menu">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item active">
+          <a href="#" class="menu__link">My library</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

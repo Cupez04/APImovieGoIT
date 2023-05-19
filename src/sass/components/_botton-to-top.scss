@@ -1,0 +1,17 @@
+.botton_to_top {
+  display: none;
+  color:#fd8c25;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  opacity: .5;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.botton_to_top:hover {
+  opacity: 1;
+  cursor: pointer;
+  font-size: 40px;
+  transition: opacity .25s cubic-bezier(.4,0,.2,1);
+}

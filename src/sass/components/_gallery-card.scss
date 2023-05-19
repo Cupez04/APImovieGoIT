@@ -1,0 +1,81 @@
+.movie__card {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(200, 200, 200, 0.8);
+    transition: box-shadow 250ms linear;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 32px) / 2);
+    }
+    
+    @media screen and (min-width: 1280px) {
+      width: calc((100% - 2 * 105px) / 3);
+      justify-content: center;
+    }
+   
+  }
+  // card pricipal 
+  .movie__thumb {
+    border-radius: 5px;
+    overflow: hidden;
+
+
+    @media (max-width: 767.98px) {
+      width: 280px;
+      height: 398px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 336px;
+      height: 466px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 336px;
+      height: 466px;
+    }
+  }
+
+  .movie__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 250ms linear;
+
+    @media screen and (min-width: 768px) {
+      .movie__card:hover &,
+      .movie__card:focus & {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .movie__card:focus,
+  .movie__card:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  .movie__info {
+    padding: 9px;
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 12px;
+    }
+  }
+
+  .movie__name {
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #000000;
+  }
+
+  .movie__descr {
+    font-family: Roboto,sans-serif;
+    color: #ff6b08;
+    font-size: 12px;
+    font-weight: 500;
+  }

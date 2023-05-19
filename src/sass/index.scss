@@ -1,0 +1,28 @@
+@import "./utils/variables.scss";
+@import "./components/header";
+@import './components/gallery';
+@import './components/gallery-card';
+@import './components/headerLib';
+@import './components/headerPr';
+@import './components/film-modal';
+@import './components/pagination';
+@import './components/botton-to-top';
+@import './components/footer';
+.container {
+    margin: 0 auto;
+
+    @media (max-width: 767.98px) {
+      max-width: 320px;
+      padding: 0 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1279.98px) {
+      width: 768px;
+      padding: 0 32px;
+    }
+
+    @media (min-width: 1370px) {
+      width: 1280px; 
+      padding: 0 32px;
+    }
+  }

@@ -1,0 +1,49 @@
+<style>
+  .header.hidden {
+    top: -1000px; 
+  }
+  .gallery.top{
+    padding-top: 120px;
+  }
+  .logo__filmoteka span:hover{
+    cursor: pointer;
+  }
+
+</style>
+<header class="header">
+  <div class="header__container hero" id="ancho">
+    <nav class="nav">
+      <div class="logo__filmoteka">
+        <i class="bx bx-film"></i>
+        <span>Filmoteka</span>
+      </div>
+      <div class="search__header">
+        <input
+          type="text"
+          placeholder="Movie search"
+          class="search__input"
+        />
+        <i class="bx bx-search" id="icono"></i>
+      </div>
+      <ul class="menu__header">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dos"><a href="library.html">My library</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+  window.addEventListener('scroll', function() {
+    let header = document.querySelector('.header');
+    let gallery = document.querySelector('.gallery');
+    if (window.pageYOffset > 0) {
+      header.classList.add('hidden');
+      gallery.classList.add('top');
+    } else {
+      setTimeout(function() {
+        header.classList.remove('hidden');
+        gallery.classList.remove('top')
+      }, 100); // Espera 300 milisegundos (0.3 segundos) antes de eliminar la clase "hidden"
+    }
+  });
+</script>
